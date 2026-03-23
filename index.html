@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srinath Suresh Kumar | Portfolio</title>
+    <meta name="description" content="Personal website of Srinath Suresh Kumar, Software Engineer and Graduate Student at Georgia Tech.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Column -->
+        <aside class="left-column panel">
+            <div class="profile-section">
+                <div class="profile-image-container">
+                    <img src="profile.jpg" alt="Srinath Suresh Kumar" class="profile-pic">
+                </div>
+                <h1 class="name">Srinath<br>Suresh Kumar</h1>
+                <h2 class="title">Graduate Student @ Georgia Tech</h2>
+                <p class="subtitle">Software Engineer</p>
+            </div>
+
+            <div class="contact-info">
+                <a href="mailto:srinathsk18@gmail.com" class="contact-link">
+                    <i class="fas fa-envelope"></i> srinathsk18@gmail.com
+                </a>
+                <a href="tel:+14046305415" class="contact-link">
+                    <i class="fas fa-phone"></i> +1 (404) 630-5415
+                </a>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i> Atlanta, Georgia, USA
+                </div>
+                <a href="https://github.com/sureshkumarsrinath" target="_blank" class="contact-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://linkedin.com/in/srinathsureshkumar" target="_blank" class="contact-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+
+            <div class="skills-section">
+                <h3>Skills</h3>
+                
+                <div class="skill-category">
+                    <h4>Languages</h4>
+                    <div class="tags">
+                        <span class="tag">C/C++</span><span class="tag">Java</span><span class="tag">Kotlin</span>
+                        <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Javascript</span>
+                        <span class="tag">Typescript</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Technologies / Frameworks</h4>
+                    <div class="tags">
+                        <span class="tag">SpringBoot</span><span class="tag">NodeJS</span><span class="tag">ReactJS</span>
+                        <span class="tag">Express</span><span class="tag">Flask</span><span class="tag">Hazelcast</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>DevOps</h4>
+                    <div class="tags">
+                        <span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Argo</span>
+                        <span class="tag">EKS</span><span class="tag">AWS</span><span class="tag">CI/CD</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Data Engineering</h4>
+                    <div class="tags">
+                        <span class="tag">Apache Spark</span><span class="tag">PySpark</span><span class="tag">Athena</span>
+                        <span class="tag">Trino</span><span class="tag">Delta</span><span class="tag">PostgreSQL</span>
+                        <span class="tag">Airflow</span><span class="tag">Apache Iceberg</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Data Science</h4>
+                    <div class="tags">
+                        <span class="tag">Tensorflow</span><span class="tag">PyTorch</span><span class="tag">HuggingFace</span>
+                        <span class="tag">Pandas</span><span class="tag">Numpy</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Column -->
+        <main class="main-column">
+            <section id="about" class="panel main-section">
+                <h2 class="section-title"><i class="fas fa-user"></i> About Me</h2>
+                <p>Hi, I'm Srinath, a graduate student at Georgia Tech pursuing a Master's degree in Computer Science. I recently concluded my Data Engineering Internship at Tesla in the Bay Area. With a passion for backend development, databases, and distributed systems, I am dedicated to building scalable and efficient software solutions.</p>
+                <p>My academic journey and hands-on experience with building software for financial institutions, big data platforms and full stack web development have equipped me with a solid foundation in designing and optimizing backend architectures that drive seamless data flow and support complex distributed systems. I'm constantly exploring new technologies and methodologies to further enhance my skills in backend engineering, real-time systems and database management.</p>
+                <p>With my recent experience in data engineering at Tesla, I have gained hands-on experience in building data pipelines, ETL processes understanding the business requirements and working with data engineers to design and implement data pipelines to support the business needs.</p>
+            </section>
+            
+            <section id="experience" class="panel main-section">
+                <h2 class="section-title"><i class="fas fa-briefcase"></i> Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Georgia Tech, School of Computer Science</h3>
+                            <h4>Graduate Teaching Assistant</h4>
+                            <p class="timeline-date">Jan 2026 — Present</p>
+                            <ul>
+                                <li>GTA for CS 6423: Advanced Database System Implementation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Tesla</h3>
+                            <h4>Data Engineering Intern</h4>
+                            <p class="timeline-date">May 2025 — Dec 2025</p>
+                            <ul>
+                                <li>Worked on migration of data pipelines to new regional clusters by transforming the entire infrastructure to use Environment-as-a-Parameter design pattern.</li>
+                                <li>Optimized data storage by converting tall Entity-Attribute-Value (EAV) tables to wide tables leveraging Iceberg's schema evolution capabilities.</li>
+                                <li>Upgraded flags and test cases in PySpark packages used by all teams to leverage the latest Iceberg features.</li>
+                                <li>Designed and developed processes to enable users to fill missing data and correct data from energy devices via the UI.</li>
+                                <li>Developed data pipelines powering dashboards to monitor service proficiency, diagnostic accuracy, and service logistics.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Arcesium</h3>
+                            <h4>Senior Software Engineer</h4>
+                            <p class="timeline-date">Jan 2024 — July 2024</p>
+                            <ul>
+                                <li>Developed a self-serviceable low-code/no-code ETL platform for building data transformation pipelines with SQL/Python snippets.</li>
+                                <li>Orchestrated the end-to-end flow of ETL pipelines via APIs, queuing jobs, resource allocation, and PySpark workflows.</li>
+                                <li>Implemented distributed caches reducing metadata fetch times from 7-10s to a few milliseconds.</li>
+                                <li>Implemented distributed rate-limiting for the microservices in the platform.</li>
+                                <li>Worked on data ingestion converting raw data into structured data for financial insights.</li>
+                            </ul>
+                            <h4 style="margin-top: 1rem;">Software Engineer</h4>
+                            <p class="timeline-date">July 2022 — Jan 2024</p>
+                            <ul>
+                                <li>Developed microservices from scratch to fetch/edit data in the data lake irrespective of storage format.</li>
+                                <li>Worked on benchmarking and allocating resources for Spark based ETL jobs reducing cloud costs.</li>
+                                <li>Implemented CI/CD pipelines deploying Docker images to Kubernetes via Terraform AWS architecture.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>CEG Tech Forum</h3>
+                            <h4>Director of Technology - Backend Development/DevOps</h4>
+                            <p class="timeline-date">Nov 2021 — June 2022</p>
+                            <ul>
+                                <li>Designed scalable cloud architecture on AWS facing close to 1 million incoming requests.</li>
+                                <li>Integrated payment portal (Instamojo) with < 1% failure rate.</li>
+                                <li>Developed backend APIs for registrations, payments, games, and a blog site for the college's tech festival.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="education" class="panel main-section">
+                <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Georgia Institute of Technology</h3>
+                            <h4>Master of Science, Computer Science (MSCS)</h4>
+                            <p class="timeline-date">Aug 2024 — Present (Expected May 2026) | Atlanta, GA, USA</p>
+                            <p><strong>GPA:</strong> 4.0/4.0</p>
+                            <p><strong>Coursework:</strong> Distributed Computing, Advanced Database Systems, Big Data Systems and Analytics, High Performance Computing, High Performance Computer Architecture, Hardware-Software Co-Design for Machine Learning Systems</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>College of Engineering Guindy Anna University</h3>
+                            <h4>Bachelor of Engineering, Computer Science & Engineering (BE Hons)</h4>
+                            <p class="timeline-date">Aug 2018 — May 2022 | Chennai, India</p>
+                            <p><strong>CGPA:</strong> 9.29/10</p>
+                            <p>Active member in the Computer Science Engineer's Association (CSEA) and National Service Scheme (NSS). Back End Developer at CEG Tech Forum (CTF) and CSEA.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="panel main-section">
+                <h2 class="section-title"><i class="fas fa-code"></i> Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Fault Tolerant Distributed Sharded Key-Value Store</h3>
+                        <p class="project-date">Sept 2024 - Dec 2024</p>
+                        <p>Developed a highly-available, sharded key-value store using 3-way Paxos replication for fault tolerance. Verified resilience to 5,000+ randomized failures with strong consistency.</p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Concurrent Operations on B-plus Trees</h3>
+                        <p class="project-date">Sept 2024 - Dec 2024</p>
+                        <p>Implemented concurrent operations on B-plus tree with locking and lock-free mechanisms in C/C++ to model highly parallel computing workloads.</p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Ensemble of LLMs for Sentiment Analysis <a href="https://github.com/sureshkumarsrinath/llm-ensemble-for-neologism" target="_blank"><i class="fab fa-github"></i></a></h3>
+                        <p class="project-date">Sept 2024 - Dec 2024</p>
+                        <p>Implemented an ensemble for LLMs to detect sentiment of Neologisms on Social Media achieving 87% accuracy using Hugging Face Transformers. Evaluated PEFT techniques.</p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>SDN-based Intrusion Detection System</h3>
+                        <p class="project-date">May 2022</p>
+                        <p>Built a traffic classification engine based on Random Forest to detect anomalous flows with 95.3% F1 score. Designed SDN rules to verify human users, increasing download speeds.</p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>MockChain <a href="https://github.com/sureshkumarsrinath/mockchain" target="_blank"><i class="fab fa-github"></i></a></h3>
+                        <p class="project-date">July 2020</p>
+                        <p>Built a PoW-based blockchain using NodeJS, Express, and Redis. Deployed services for wallets, transactions, mining, and a ReactJS UI.</p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Classification of DDoS & Flash Events</h3>
+                        <p class="project-date">May 2021</p>
+                        <p>Real-time classification of network traffic illegitimate DDoS or legitimate Flash event with high accuracy in an SDN environment. Published in IEEE ICECCT 2021.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
