@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Srinath Suresh Kumar | Portfolio</title>
+    <link rel="icon" href="favicon.png" type="image/png">
     <meta name="description" content="Personal website of Srinath Suresh Kumar, Software Engineer and Graduate Student at Georgia Tech.">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -91,9 +92,9 @@
         <main class="main-column">
             <section id="about" class="panel main-section">
                 <h2 class="section-title"><i class="fas fa-user"></i> About Me</h2>
-                <p>Hi, I'm Srinath, a graduate student at Georgia Tech pursuing a Master's degree in Computer Science. I recently concluded my Data Engineering Internship at Tesla in the Bay Area. With a passion for backend development, databases, and distributed systems, I am dedicated to building scalable and efficient software solutions.</p>
-                <p>My academic journey and hands-on experience with building software for financial institutions, big data platforms and full stack web development have equipped me with a solid foundation in designing and optimizing backend architectures that drive seamless data flow and support complex distributed systems. I'm constantly exploring new technologies and methodologies to further enhance my skills in backend engineering, real-time systems and database management.</p>
-                <p>With my recent experience in data engineering at Tesla, I have gained hands-on experience in building data pipelines, ETL processes understanding the business requirements and working with data engineers to design and implement data pipelines to support the business needs.</p>
+                <p>Hi, I'm Srinath, a Master's student in Computer Science at Georgia Tech, actively seeking full-time software engineering and data engineering opportunities. I am deeply passionate about database internals, data platforms,distributed systems, and architecting robust, high-performance infrastructures.</p>
+                <p>My professional journey has given me a unique blend of theoretical depth and practical, large-scale software engineering experience. Developing a low-code/no-code ETL platform, a self-service data editor, and an advanced query studio as a Software Engineer at Arcesium honed my backend and distributed systems fundamentals. Additionally, my recent Data Engineering internship at Tesla allowed me to modernize massive data pipelines, optimize storage schemas with Apache Iceberg, and tackle high-impact data infrastructure challenges.</p>
+                <p>Coupled with my rigorous coursework at Georgia Tech in advanced databases, big data systems and distributed computing, I have developed a solid foundation in designing scalable backend architectures that drive seamless workflows. I am eager to bring this expertise to a dynamic team and make an immediate impact on day one.</p>
             </section>
             
             <section id="experience" class="panel main-section">
@@ -118,11 +119,23 @@
                             <h4>Data Engineering Intern</h4>
                             <p class="timeline-date">May 2025 — Dec 2025</p>
                             <ul>
-                                <li>Worked on migration of data pipelines to new regional clusters by transforming the entire infrastructure to use Environment-as-a-Parameter design pattern.</li>
-                                <li>Optimized data storage by converting tall Entity-Attribute-Value (EAV) tables to wide tables leveraging Iceberg's schema evolution capabilities.</li>
-                                <li>Upgraded flags and test cases in PySpark packages used by all teams to leverage the latest Iceberg features.</li>
-                                <li>Designed and developed processes to enable users to fill missing data and correct data from energy devices via the UI.</li>
-                                <li>Developed data pipelines powering dashboards to monitor service proficiency, diagnostic accuracy, and service logistics.</li>
+                                <li>Worked on migration of data pipelines to new regional clusters, requiring no migration effort, by transforming the entire infrastructure to use Environment-as-a-Parameter design pattern.</li>
+                                <li>Optimized data storage by converting tall Entity-Attribute-Value (EAV) tables to wide tables leveraging Iceberg's schema evolution capabilities reducing storage space by 85% and pipline runtimes by 20 seconds.</li>
+                                <li>Designed and developed a low-latency data correction framework that translated user inputs into immediate state-fixes for corrupted or missing telemetry records.</li>
+                                <li>Upgraded flags and test cases in PySpark packages used by teams across Tesla to leverage the latest Iceberg features.</li>
+                                <li>Developed data pipelines powering dashboards with data to monitor service proficiency, diagnostic accuracy, and service logistics.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Georgia Tech, Physical Internet Center</h3>
+                            <h4>Graduate Research Assistant</h4>
+                            <p class="timeline-date">Jan 2025 — May 2025</p>
+                            <ul>
+                                <li>Worked on the developement of orchestrating Less-Than-Truckload Hyperfreight System at H. Milton Stewart School of Industrial and Systems Engineering, Georgia Tech</li>
                             </ul>
                         </div>
                     </div>
@@ -134,18 +147,24 @@
                             <h4>Senior Software Engineer</h4>
                             <p class="timeline-date">Jan 2024 — July 2024</p>
                             <ul>
-                                <li>Developed a self-serviceable low-code/no-code ETL platform for building data transformation pipelines with SQL/Python snippets.</li>
-                                <li>Orchestrated the end-to-end flow of ETL pipelines via APIs, queuing jobs, resource allocation, and PySpark workflows.</li>
-                                <li>Implemented distributed caches reducing metadata fetch times from 7-10s to a few milliseconds.</li>
-                                <li>Implemented distributed rate-limiting for the microservices in the platform.</li>
-                                <li>Worked on data ingestion converting raw data into structured data for financial insights.</li>
+                                <li>Developed a self-serviceable low-code/no-code ETL platform for building data transformation pipelines with SQL/Python snippets enabling non-technial users to spin up data pipelines in a few minutes.</li>
+                                <li>Orchestrated the end-to-end flow of ETL pipelines, handling user API calls, cron, manual & event-based triggers, queuing jobs, resource allocation, and PySpark workflows.</li>
+                                <li>Implemented distributed caches reducing metadata fetch times from AWS Glue and DataHub from 7-10s to less than 200 milliseconds.</li>
+                                <li>Implemented distributed rate-limiting using the Token Bucket algorithm for the microservices in the platform.</li>
+                                <li>Worked on data ingestion converting raw data into structured data in Postgres and Delta tables for financial insights with efficient Spark jobs.</li>
                             </ul>
                             <h4 style="margin-top: 1rem;">Software Engineer</h4>
                             <p class="timeline-date">July 2022 — Jan 2024</p>
                             <ul>
-                                <li>Developed microservices from scratch to fetch/edit data in the data lake irrespective of storage format.</li>
-                                <li>Worked on benchmarking and allocating resources for Spark based ETL jobs reducing cloud costs.</li>
-                                <li>Implemented CI/CD pipelines deploying Docker images to Kubernetes via Terraform AWS architecture.</li>
+                                <li>Developed microservices from scratch to fetch/edit data in the data lake using Postgres and Delta tables using AWS Athena and Spark pipelines.</li>
+                                <li>Worked on benchmarking and optimizing resource allocation for Spark based ETL jobs reducing cloud costs by 35%.</li>
+                                <li>Implemented CI/CD pipelines for services on the platform, handled resrouce allocation via Terraform.</li>
+                            </ul>
+                            <h4 style="margin-top: 1rem;">Software Engineering Intern</h4>
+                            <p class="timeline-date">June 2021 — Aug 2021</p>
+                            <ul>
+                                <li>Enhanced the feed data enrichment API responses based on Spring Boot to additionally return metadata related to the standardisation of feed values without any additional API latencies, enhancing the transparency around the process.</li>
+                                <li>Developed UI components with ReactJS to display this metadata in a resizable sidebar, improving UX for the end-users.</li>
                             </ul>
                         </div>
                     </div>
@@ -157,9 +176,44 @@
                             <h4>Director of Technology - Backend Development/DevOps</h4>
                             <p class="timeline-date">Nov 2021 — June 2022</p>
                             <ul>
+                                <li>Conducted workshops on Cloud Computing and Amazon Web Services</li>
                                 <li>Designed scalable cloud architecture on AWS facing close to 1 million incoming requests.</li>
                                 <li>Integrated payment portal (Instamojo) with < 1% failure rate.</li>
                                 <li>Developed backend APIs for registrations, payments, games, and a blog site for the college's tech festival.</li>
+                            </ul>
+                            <h4>Backend Developer & DevOps</h4>
+                            <p class="timeline-date">Dec 2020— Nov 2021</p>
+                            <ul>
+                                <li>Developed back-end servers, REST APIs and Databases for the virtual edition of Kurukshethra(K!) 2021.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Computer Science Engineer's Association</h3>
+                            <h4>Secretary of Courses</h4>
+                            <p class="timeline-date">Nov 2021 — June 2022</p>
+                            <ul>
+                                <li>Responsible for Mentoring Students in areas of Programming, Web Development and Data Structures & Algorithms.</li>
+                            </ul>
+                            <h4>Backend Developer & DevOps</h4>
+                            <p class="timeline-date">Jan 2021 — Dec 2021</p>
+                            <ul>
+                                <li>Developed back-end servers, REST APIs and Databases for the virtual edition of Abacus 2021(inter-college symposium), Responsible for Deployment and Maintenance of the site & DB, Integrated the payments solutions with the web services for the event. </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>HealthMed Technologies</h3>
+                            <h4>Junior Developer Intern</h4>
+                            <p class="timeline-date">Nov 2019 — Dec 2019</p>
+                            <ul>
+                                <li>Worked on the development of a hybrid application prototype that helps patients access their medical records shared by hospitals.</li>
                             </ul>
                         </div>
                     </div>
@@ -176,7 +230,7 @@
                             <h4>Master of Science, Computer Science (MSCS)</h4>
                             <p class="timeline-date">Aug 2024 — Present (Expected May 2026) | Atlanta, GA, USA</p>
                             <p><strong>GPA:</strong> 4.0/4.0</p>
-                            <p><strong>Coursework:</strong> Distributed Computing, Advanced Database Systems, Big Data Systems and Analytics, High Performance Computing, High Performance Computer Architecture, Hardware-Software Co-Design for Machine Learning Systems</p>
+                            <p><strong>Coursework:</strong> Distributed Computing, Advanced Database Systems, Big Data Systems and Analytics, High Performance Computing, High Performance Computer Architecture, Hardware-Software Co-Design for Machine Learning Systems, Introduction to Graduate Algorithms, Computer Networks, Enterprise Cybersecurity Management</p>
                         </div>
                     </div>
                     
