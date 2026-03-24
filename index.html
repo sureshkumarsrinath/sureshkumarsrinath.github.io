@@ -250,41 +250,90 @@
             <section id="projects" class="panel main-section">
                 <h2 class="section-title"><i class="fas fa-code"></i> Projects</h2>
                 <div class="projects-grid">
+                    
+                    <div class="project-card">
+                        <h3>Benchmarking & Semantic Caching for LLM-based RAG System - TokenSmith</h3>
+                        <p class="project-date">January 2026 - Present</p>
+                        <ul style="padding-left: 1.25rem; font-size: 0.95rem; color: var(--text-muted); flex-grow: 1;">
+                            <li style="margin-bottom: 0.5rem;">Built a benchmarking framework for TokenSmith’s RAG QA pipeline, evaluating latency, retrieval quality, and answer accuracy across FAISS (vector) and BM25 (lexical) retrieval to identify system bottlenecks.</li>
+                            <li>Developing a semantic caching layer to reuse responses for semantically similar queries, leveraging CrossEncoder re-ranking and HyDE query expansion to cut redundant LLM inference.</li>
+                        </ul>
+                    </div>
+
                     <div class="project-card">
                         <h3>Fault Tolerant Distributed Sharded Key-Value Store</h3>
-                        <p class="project-date">Sept 2024 - Dec 2024</p>
-                        <p>Developed a highly-available, sharded key-value store using 3-way Paxos replication for fault tolerance. Verified resilience to 5,000+ randomized failures with strong consistency.</p>
+                        <p class="project-date">January 2025 - May 2025</p>
+                        <ul style="padding-left: 1.25rem; font-size: 0.95rem; color: var(--text-muted); flex-grow: 1;">
+                            <li style="margin-bottom: 0.5rem;">Developed a highly-available, sharded key-value store using 3-way Paxos replication for fault tolerance, passing concurrency tests designed to simulate thousands of concurrent operations per second across multiple nodes.</li>
+                            <li>Verified the system's resilience to more than 5,000 randomized failure scenarios, with strong consistency guarantees and no data loss.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Advanced Database System Implementation (BuzzDB)</h3>
+                        <p class="project-date">January 2025 - May 2025</p>
+                        <ul style="padding-left: 1.25rem; font-size: 0.95rem; color: var(--text-muted); flex-grow: 1;">
+                            <li style="margin-bottom: 0.5rem;">Designed and implemented a robust Write-Ahead Logging (WAL) subsystem supporting full transaction recovery (Redo and Undo phases) and active checkpointing to guarantee data durability and atomic rollbacks.</li>
+                            <li style="margin-bottom: 0.5rem;">Developed a cost-based query optimizer that estimates join cardinality and IO/CPU costs, utilizing Dynamic Programming to compute and cache optimal left-deep join execution plans.</li>
+                            <li>Built a transaction manager to actively track transactional state and coordinate with the buffer manager to enforce strict atomicity by precisely flushing or discarding modified pages upon commit and abort operations.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>Ensemble of LLMs for Sentiment Analysis on Neologisms <a href="https://github.com/sureshkumarsrinath/llm-ensemble-for-neologism" target="_blank"><i class="fab fa-github"></i></a></h3>
+                        <p class="project-date">September 2024 - December 2024</p>
+                        <ul style="padding-left: 1.25rem; font-size: 0.95rem; color: var(--text-muted); flex-grow: 1;">
+                            <li style="margin-bottom: 0.5rem;">Implemented an ensemble for Large Language Models (LLMs) to detect sentiment expressed by Neologisms on Social Media and achieved an accuracy of 87% on Twitter Neologisms using Hugging Face Transformers and PyTorch.</li>
+                            <li>Studied the performance of task based fine tuning techniques and resource efficiency PEFT techniques like LoRA, DoRA and AdaLoRA against full model fine tuning of the GPT-2 and BERT based LLMs.</li>
+                        </ul>
                     </div>
 
                     <div class="project-card">
                         <h3>Concurrent Operations on B-plus Trees</h3>
-                        <p class="project-date">Sept 2024 - Dec 2024</p>
-                        <p>Implemented concurrent operations on B-plus tree with locking and lock-free mechanisms in C/C++ to model highly parallel computing workloads.</p>
+                        <p class="project-date">August 2024 - December 2024</p>
+                        <ul style="padding-left: 1.25rem; font-size: 0.95rem; color: var(--text-muted); flex-grow: 1;">
+                            <li style="margin-bottom: 0.5rem;">Developed lock-based and latch-free B-plus trees, to support concurrent inserts, deletes, and look-ups, ensuring correctness under multi-threaded and multi-processor execution.</li>
+                            <li>Increased throughput by up to 5 times by reducing lock contention using fine-grained node-level locking and using lock-free compare-and-swap (CAS) operations with near-linear scalability to 16 cores.</li>
+                        </ul>
                     </div>
 
                     <div class="project-card">
-                        <h3>Ensemble of LLMs for Sentiment Analysis <a href="https://github.com/sureshkumarsrinath/llm-ensemble-for-neologism" target="_blank"><i class="fab fa-github"></i></a></h3>
-                        <p class="project-date">Sept 2024 - Dec 2024</p>
-                        <p>Implemented an ensemble for LLMs to detect sentiment of Neologisms on Social Media achieving 87% accuracy using Hugging Face Transformers. Evaluated PEFT techniques.</p>
+                        <h3>5 Stage Superscalar Pipeline with In-order and Out-of-order execution</h3>
+                        <p class="project-date">August 2024 - December 2024</p>
+                        <ul style="padding-left: 1.25rem; font-size: 0.95rem; color: var(--text-muted); flex-grow: 1;">
+                            <li style="margin-bottom: 0.5rem;">Built a trace-driven superscalar pipeline with forwarding and Gshare branch prediction, with performance analysis.</li>
+                            <li style="margin-bottom: 0.5rem;">Developed out-of-order execution with in-order commit, incorporating a Reorder Buffer (ROB) for precise state management and a Register Alias Table (RAT) for dynamic register renaming.</li>
+                            <li>Implemented a scalable multi-core, multi-level cache simulator integrated with a DRAM-backed main memory model.</li>
+                        </ul>
                     </div>
 
                     <div class="project-card">
                         <h3>SDN-based Intrusion Detection System</h3>
                         <p class="project-date">May 2022</p>
-                        <p>Built a traffic classification engine based on Random Forest to detect anomalous flows with 95.3% F1 score. Designed SDN rules to verify human users, increasing download speeds.</p>
+                        <ul style="padding-left: 1.25rem; font-size: 0.95rem; color: var(--text-muted); flex-grow: 1;">
+                            <li style="margin-bottom: 0.5rem;">Build a traffic classification engine based on Random Forest algorithm to detect anomalous flows with F1 score of 95.3%.</li>
+                            <li>Designed SDN controller rules to identify, verify real human users and serve the requested resources only to legitimate requests increasing file download speeds by 30%.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Classification of DDoS & Flash Events</h3>
+                        <p class="project-date">June 2021</p>
+                        <ul style="padding-left: 1.25rem; font-size: 0.95rem; color: var(--text-muted); flex-grow: 1;">
+                            <li style="margin-bottom: 0.5rem;">Real-time classification of network traffic illegitimate DDoS or legitimate Flash event with accuracies of 80% and 85% respectively in an SDN based environment.</li>
+                            <li>Presented the paper at Fourth International Conference on Electrical, Computer and Communication Technologies, Erode, India, 2021.</li>
+                        </ul>
                     </div>
 
                     <div class="project-card">
                         <h3>MockChain <a href="https://github.com/sureshkumarsrinath/mockchain" target="_blank"><i class="fab fa-github"></i></a></h3>
                         <p class="project-date">July 2020</p>
-                        <p>Built a PoW-based blockchain using NodeJS, Express, and Redis. Deployed services for wallets, transactions, mining, and a ReactJS UI.</p>
+                        <ul style="padding-left: 1.25rem; font-size: 0.95rem; color: var(--text-muted); flex-grow: 1;">
+                            <li style="margin-bottom: 0.5rem;">Built a proof-of-work based blockchain application using NodeJS express node and Redis as distributed database.</li>
+                            <li>Deployed services to create wallets, conduct transactions, mine blocks, publish the mined blocks to all the peers on the network and a ReactJS based UI for users to interact with the block chain.</li>
+                        </ul>
                     </div>
 
-                    <div class="project-card">
-                        <h3>Classification of DDoS & Flash Events</h3>
-                        <p class="project-date">May 2021</p>
-                        <p>Real-time classification of network traffic illegitimate DDoS or legitimate Flash event with high accuracy in an SDN environment. Published in IEEE ICECCT 2021.</p>
-                    </div>
                 </div>
             </section>
         </main>
